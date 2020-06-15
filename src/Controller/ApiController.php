@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Entity\Phone;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -24,6 +23,8 @@ class ApiController extends AbstractController
 
         $data = $serializer->serialize($phone, 'json');
 
-        return new Response($data);
+        return new Response($data, 200, [
+            'Content-Type' => 'application/json'
+        ]);
     }
 }
