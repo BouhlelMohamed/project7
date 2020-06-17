@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ApiController extends AbstractController
 {
     /**
-     * @Route("api", name="api")
+     * @Route("/api", name="api")
      */
     public function index(SerializerInterface $serializer)
     {
