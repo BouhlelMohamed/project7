@@ -1,0 +1,79 @@
+<?php //%255B2e37c2e38166199c46756effdfb29ab9%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT id_0 FROM (SELECT p0_.id AS id_0, p0_.name AS name_1, p0_.price AS price_2, p0_.color AS color_3, p0_.description AS description_4 FROM phone p0_) dctrn_result LIMIT 0',
+            ],
+        ],
+        'stdClass' => [
+            'isMixed' => [
+                2 => true,
+            ],
+            'aliasMap' => [
+                2 => [
+                    'p' => 'App\\Entity\\Phone',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'name_1' => 'name',
+                    'price_2' => 'price',
+                    'color_3' => 'color',
+                    'description_4' => 'description',
+                ],
+            ],
+            'scalarMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'id_0' => 'string',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'p' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'p',
+                    'name_1' => 'p',
+                    'price_2' => 'p',
+                    'color_3' => 'p',
+                    'description_4' => 'p',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Phone',
+                    'name_1' => 'App\\Entity\\Phone',
+                    'price_2' => 'App\\Entity\\Phone',
+                    'color_3' => 'App\\Entity\\Phone',
+                    'description_4' => 'App\\Entity\\Phone',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
